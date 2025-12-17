@@ -1,0 +1,7 @@
+{
+  "name": "Xmas ",
+  "description": "A high-performance 3D interactive Christmas tree with AI hand gesture control in a Tiffany Blue theme.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
