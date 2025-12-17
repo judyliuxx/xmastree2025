@@ -4,12 +4,6 @@ import { Text3D, Center } from '@react-three/drei';
 import * as THREE from 'three';
 import { ParticleData, GeometryType } from '../types';
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeElements {}
-  }
-}
-
 // Tiffany Blue Palette
 const COLORS_LEAVES = ['#0ABAB5', '#40E0D0', '#7FFFD4', '#20B2AA']; 
 const COLORS_DECOR = ['#FFFFFF', '#E0FFFF', '#F0FFFF'];

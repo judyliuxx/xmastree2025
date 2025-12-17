@@ -3,13 +3,8 @@ import { Canvas, ThreeElements } from '@react-three/fiber';
 import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing';
 import { OrbitControls, Environment, PerspectiveCamera } from '@react-three/drei';
 import { TreeParticles } from './TreeParticles';
+import { SnowParticles } from './SnowParticles';
 import '../types';
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeElements {}
-  }
-}
 
 interface SceneProps {
   isTreeMode: boolean;
@@ -44,6 +39,7 @@ export const Scene: React.FC<SceneProps> = ({ isTreeMode, rotationVelocity, user
       <Environment preset="city" />
 
       {/* Content */}
+      <SnowParticles />
       <TreeParticles isTreeMode={isTreeMode} rotationVelocity={rotationVelocity} userName={userName} />
 
       {/* Controls (Mouse fallback) */}

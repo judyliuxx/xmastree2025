@@ -1,5 +1,3 @@
-import { ThreeElements } from '@react-three/fiber';
-
 export interface HandLandmark {
   x: number;
   y: number;
@@ -28,11 +26,4 @@ export enum GeometryType {
   LEAF, // Octahedron
   DECOR, // Cube/Icosahedron
   RIBBON // Tetrahedron
-}
-
-// Augment the global JSX namespace to include R3F elements
-declare global {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeElements {}
-  }
 }
